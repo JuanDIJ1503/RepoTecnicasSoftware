@@ -51,5 +51,22 @@ public class ExampleUnitTest {
         //THEN
         assertEquals(207.2,operationAreaCilindro.OAreaCilindro(),0.2);
     }
+    @Test
+
+    public void Resta(){
+        //Given
+        Resta resta = new Resta();
+        resta.setNum1(20);
+        resta.setNum2(10);
+
+        //wen
+        OperationResta operationResta = new OperationResta(resta);
+
+        //then
+
+        assertEquals(10,operationResta.Oresta());
+
+
+    }
 }
 
