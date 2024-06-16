@@ -45,8 +45,10 @@ public class ExampleUnitTest {
         areaCilindro.setRadio(3);
         areaCilindro.setAltura(8);
 
+        //WHEN
         OperationAreaCilindro operationAreaCilindro = new OperationAreaCilindro(areaCilindro);
 
+        //THEN
         assertEquals(207.2,operationAreaCilindro.OAreaCilindro(),0.2);
     }
 }
