@@ -1,6 +1,7 @@
 package com.example.calculadora;
 
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.Assert.*;
@@ -16,7 +17,7 @@ public class TestOperacionesBasicas {
     private static Suma suma;
     private static Resta resta;
     private static RaizCuadrada raizCuadrada;
-    @BeforeEach
+    @BeforeAll
     public void InicializarObjeto(){
         suma = new Suma();
         resta = new Resta();
@@ -25,8 +26,8 @@ public class TestOperacionesBasicas {
 
     @Test
     public void Suma() {
-        InicializarObjeto();
         //GIVEN
+        InicializarObjeto();
         suma.setNum2(30);
         suma.setNum1(30);
 
@@ -39,11 +40,10 @@ public class TestOperacionesBasicas {
     @Test
 
     public void Resta(){
-        InicializarObjeto();
         //Given
+        InicializarObjeto();
         resta.setNum1(20);
         resta.setNum2(10);
-
         //wen
         OperationResta operationResta = new OperationResta(resta);
         //then
@@ -52,12 +52,12 @@ public class TestOperacionesBasicas {
 
     @Test
     public void RaizCuadrada(){
+        //GIVEN
         InicializarObjeto();
-
         raizCuadrada.setNumb(25);
-
+        //WHEN
         OperationRaiz operationRaiz=new OperationRaiz(raizCuadrada);
-
+        //THEN
         assertEquals(5,operationRaiz.OpRaiz(),0.1);
 
     }
