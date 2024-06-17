@@ -5,9 +5,13 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import MODEL.AreaFiguras.AreaCirculo;
+import MODEL.AreaFiguras.AreaCuadrado;
 import MODEL.AreaFiguras.AreaTriangulo;
+import MODEL.RaizCuadrada;
 import MODEL.AreasFiguras3D.AreaCilindro;
+import UTILS.OperationRaiz;
 import UTILS.OptAreaFiguras.OperationAreaCirculo;
+import UTILS.OptAreaFiguras.OperationAreaCuadrado;
 import UTILS.OptAreaFiguras.OperationAreaTriangulo;
 import UTILS.OptAreasFiguras3D.OperationAreaCilindro;
 
@@ -37,4 +41,14 @@ public class TestAreaFiguras {
         //then
         assertEquals(100,operationAreaTriangulo.OAreaTriangulo(),0.1);
     }
+    @Test
+    public void AreaCuadrado(){
+        AreaCuadrado areaCuadrado = new AreaCuadrado();
+        areaCuadrado.setLado(2);
+
+        OperationAreaCuadrado operationAreaCuadrado = new OperationAreaCuadrado(areaCuadrado);
+
+        assertEquals(4,operationAreaCuadrado.OAreaCuadrado(),0.1);
+}
+
 }
