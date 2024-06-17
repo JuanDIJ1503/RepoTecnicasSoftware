@@ -2,16 +2,16 @@ package MODEL.AreasFiguras3D;
 
 public class AreaPiramide {
     private double base;
-    private  double height;
-    private double slantHeight;
+    private  double altura;
+    private double alturaInclinada;
 
     public double  getbase(){return base;}
     public void  setbase(double base ){this.base = base;}
 
-    public double  getheight(){return height;}
-    public void  setheight(double height ){this.height = height;}
-    public double  getSlantHeight(){return slantHeight;}
-    public void  setSlantHeight(double slantHeight ){this.slantHeight = slantHeight;}
+    public double  getaltura(){return altura;}
+    public void  setaltura(double altura){this.altura = altura;}
+    public double  getAlturaInclinada(){return alturaInclinada;}
+    public void  setAlturaInclinada(double alturaInclinada ){this.alturaInclinada = alturaInclinada;}
 
 
 }

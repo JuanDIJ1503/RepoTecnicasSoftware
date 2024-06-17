@@ -47,8 +47,8 @@ public class TestAreaFiguras3D {
         
         AreaPiramide areaPiramide = new AreaPiramide();
         areaPiramide.setbase(6);
-        areaPiramide.setheight(12);
-        areaPiramide.setSlantHeight(14);
+        areaPiramide.setaltura(12);
+        areaPiramide.setAlturaInclinada(14);
 
         OperationAreaPiramide operationAreaPiramide = new OperationAreaPiramide(areaPiramide);
 

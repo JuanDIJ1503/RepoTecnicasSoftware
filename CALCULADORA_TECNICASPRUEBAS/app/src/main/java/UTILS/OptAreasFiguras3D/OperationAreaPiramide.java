@@ -12,7 +12,7 @@ public class OperationAreaPiramide {
 
     public double OAreaPiramide(){
         double baseArea = areaPiramide.getbase() * areaPiramide.getbase();
-        double lateralArea = areaPiramide.getbase() * areaPiramide.getSlantHeight() * 2;
+        double lateralArea = areaPiramide.getbase() * areaPiramide.getAlturaInclinada() * 2;
         double OAreaPiramide = baseArea + lateralArea;
         return OAreaPiramide ;
 
