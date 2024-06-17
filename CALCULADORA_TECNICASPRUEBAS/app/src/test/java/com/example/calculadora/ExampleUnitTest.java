@@ -5,11 +5,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import MODEL.AreaFiguras.AreaCirculo;
+import MODEL.AreaFiguras.AreaTriangulo;
 import MODEL.AreasFiguras3D.AreaCilindro;
 import MODEL.Suma;
+import UTILS.OperationResta;
 import UTILS.OperationSuma;
 import UTILS.OptAreaFiguras.OperationAreaCirculo;
+import UTILS.OptAreaFiguras.OperationAreaTriangulo;
 import UTILS.OptAreasFiguras3D.OperationAreaCilindro;
+import MODEL.Resta;
 
 public class ExampleUnitTest {
     @Test
@@ -68,5 +72,6 @@ public class ExampleUnitTest {
 
 
     }
+
 }
 
