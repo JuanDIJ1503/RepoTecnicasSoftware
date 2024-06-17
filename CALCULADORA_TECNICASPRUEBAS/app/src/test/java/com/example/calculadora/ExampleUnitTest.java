@@ -1,15 +1,21 @@
 package com.example.calculadora;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.InvalidPropertiesFormatException;
 
 import MODEL.AreaFiguras.AreaCirculo;
 import MODEL.AreasFiguras3D.AreaCilindro;
+import MODEL.AreasFiguras3D.AreaEsfera;
+import MODEL.RaizCuadrada;
 import MODEL.Suma;
+import UTILS.OperationRaiz;
 import UTILS.OperationSuma;
 import UTILS.OptAreaFiguras.OperationAreaCirculo;
 import UTILS.OptAreasFiguras3D.OperationAreaCilindro;
+import UTILS.OptAreasFiguras3D.OperationAreaEsfera;
 
 public class ExampleUnitTest {
     @Test
@@ -51,5 +57,7 @@ public class ExampleUnitTest {
         //THEN
         assertEquals(207.2,operationAreaCilindro.OAreaCilindro(),0.2);
     }
+
+  
 }
 
