@@ -15,10 +15,12 @@ import UTILS.OptAreasFiguras3D.OperationAreaPiramide;
 public class TestAreaFiguras3D {
     private static AreaCilindro areaCilindro;
     private static AreaCuadrado areaCuadrado;
+    private static AreaPiramide areaPiramide;
     @BeforeAll
     static void InicializarObjeto(){
         areaCilindro = new AreaCilindro();
         areaCuadrado = new AreaCuadrado();
+        areaPiramide = new AreaPiramide();
     }
     @Test
     public void AreaCilindro(){
@@ -44,8 +46,7 @@ public class TestAreaFiguras3D {
     @Test
 
     public void AreaPiramide(){
-        
-        AreaPiramide areaPiramide = new AreaPiramide();
+        InicializarObjeto();
         areaPiramide.setbase(6);
         areaPiramide.setaltura(12);
         areaPiramide.setAlturaInclinada(14);
