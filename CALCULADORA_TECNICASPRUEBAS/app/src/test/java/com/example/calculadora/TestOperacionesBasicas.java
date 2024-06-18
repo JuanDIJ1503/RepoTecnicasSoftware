@@ -6,8 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.Assert.*;
 
+import MODEL.Multiplicacion;
 import MODEL.RaizCuadrada;
 import MODEL.Suma;
+import UTILS.OperacionMultiplicacion;
 import UTILS.OperationRaiz;
 import UTILS.OperationResta;
 import UTILS.OperationSuma;
@@ -59,6 +61,16 @@ public class TestOperacionesBasicas {
         OperationRaiz operationRaiz=new OperationRaiz(raizCuadrada);
         //THEN
         assertEquals(5,operationRaiz.OpRaiz(),0.1);
+
+    }
+    @Test
+    public void Multiplicacion(){
+        Multiplicacion multiplicacion = new Multiplicacion();
+        multiplicacion.setNum1(2);
+        multiplicacion.setNum2(2);
+
+        OperacionMultiplicacion operacionMultiplicacion = new OperacionMultiplicacion(multiplicacion);
+        assertEquals(4,operacionMultiplicacion.Omultiplicacion());
 
     }
 
